@@ -12,24 +12,24 @@
    <body>
     <!-- Header section -->
       <header>
-         <div class="ellipse">
-         <img id="ca" src="/images/cr.svg">
+         <div class="carrental">
+         <img id="ca" src="images/cr.svg">
          <div class="top">
             <div class="social">
                <div class="social1">
-                  <div class="social11"><a href=""><img src="/images/fb.svg" alt=""></a></div>
-                  <div class="social11"><a href=""><img src="/images/x.svg"></a></div>
-                  <div class="social11"><a href=""><img src="/images/insta.svg" alt=""></a></div>
-                  <div class="social11"><a href=""><img src="/images/in.svg"></a></div>
+                  <div class="social11"><a href=""><img src="images/fb.svg" alt=""></a></div>
+                  <div class="social11"><a href=""><img src="images/x.svg"></a></div>
+                  <div class="social11"><a href=""><img src="images/insta.svg" alt=""></a></div>
+                  <div class="social11"><a href=""><img src="images/in.svg"></a></div>
                </div>
-               <div class="head">
+               <div class="head" id="head1">
                   <div class="nav"> <a class="top" href="">About</a></div>
                   <div class="nav">  <a class="top" href="">Offers</a></div>
                   <div class="nav"><a class="top" href="">Corporate</a></div>
                   <div class="nav"> <a class="top" href="">Personal</a></div>
                   <div class="nav"><a class="top" href="">Locations</a></div>
                   <div class="nav"> <a class="top" href="">Contact Us</a></div>
-                  <div class="nav"> <img src="/images/profile.svg"></div>
+                  <div class="nav"> <img id="h2" src="images/profile.svg"></div>
                </div>
                <div class="hamburger" onclick="toggleMenu()">&#9776;
                </div>
@@ -46,18 +46,18 @@
                <div class="m11">
                   <div class="same"><a href="">Same as Pick-Up</a></div>
                   <div class="same"><a href="">Different Drop-off</a></div>
-                  <div class="same"><a href="">Select Vehicle type <img src="/images/Vector.svg"> </a></div>
+                  <div class="same"><a href="">Select Vehicle type <img src="images/Vector.svg"> </a></div>
                </div>
                <div class="input-group">
-                  <div class="in"><img id="ic" src="/images/map.svg">
+                  <div class="in"><img id="ic" src="images/map.svg">
                      <input type="text" id="location" placeholder="Al Quoz">
                   </div>
-                  <div class="in"><img src="/images/cal.svg" ><input type="datetime" id="pickup-date" value="2023/10/30   09:00  am">
+                  <div class="in"><img src="images/cal.svg" ><input type="datetime" id="pickup-date" value="2023/10/30   09:00  am">
                   </div>
-                  <div class="in"><img src="/images/cal.svg" >   <input type="datetime" id="dropoff-date" value="2023-11-29  09:00  am">
+                  <div class="in"><img src="images/cal.svg" >   <input type="datetime" id="dropoff-date" value="2023-11-29  09:00  am">
                   </div>
-                  <button id="search-btn"><img src="/images/srch1.svg"></button>
-                  <img src="/images/Line 61.svg">
+                  <button id="search-btn"><img src="images/srch1.svg"></button>
+                  <img src="images/Line 61.svg">
                   <button id="quick-book-btn">Quick Book</button>
                </div>
                <div class="app-download">
@@ -65,19 +65,47 @@
                      <p>Download our App for easy accessibility anytime, anywhere!</p>
                   </div>
                   <div class="store-buttons">
-                     <a href="#"><img src="/images/appstore.svg" alt="App Store"></a>
-                     <a href="#"><img src="/images/playstore.svg" alt="Google Play"></a>
+                     <a href="#"><img src="images/appstore.svg" alt="App Store"></a>
+                     <a href="#"><img src="images/playstore.svg" alt="Google Play"></a>
                   </div>
                </div>
             </div>
          </div>
-         <div class="booking">
+         <!-- <div class="booking">
             <button id="bookacar" onclick="toggleMenu()">Book A Car</button>
             <button id="quickbook">Quick Book</button>
-         </div>
+         </div> -->
+         <div class="booking">
+            <button id="bookacar" onclick="myFunction()">Book A Car</button>
+            <button id="quickbook">Quick Book</button>
+        </div>
+
+        <div id="book">
+           <button class="book-button" onclick="myFunction1()"> Same as Pick-up</button>
+            <button class="book-button" onclick="myFunction2()">Different Drop-Off</button>
+            <a href="">Vehicle type</a><img src="/images/Vector.svg">
+            
+
+        </div>
+
+        <div id="book1">
+            <div class="drop"><div class="drop1"><img id="ic" src="/images/map.svg"><a href="">Pickup Location</a><img src="/images/Vector.svg"></div></div>    
+            <div class="drop"><div class="drop1"><img src="/images/cal.svg" ><a href="">Pick-Up Date & Time</a><img src="/images/Vector.svg"></div></div>    
+            <div class="drop"><div class="drop1"><img src="/images/cal.svg" ><a href="">Drop off  Date & time</a></div></div>    
+    </div>
+
+    <div id="book2">
+                
+        <div class="drop"><div class="drop1"><img id="ic" src="images/map.svg"><a href="">Pickup Location</a><img src="/images/Vector.svg"></div></div>    
+        <div class="drop"><div class="drop1"><img src="/images/map.svg" ><a href="">Drop off Location</a><img src="/images/Vector.svg"></div></div>    
+
+        <div class="drop"><div class="drop1"><img src="/images/cal.svg" ><a href="">Pick-Up Date & Time</a></div></div>    
+        <div class="drop"><div class="drop1"><img src="/images/cal.svg" ><a href="">Drop off  Date & time</a></div></div>    
+   </div>
+
          <!-- Promo banner -->
          <div id="mit">
-            <img src="/images/Group 1171275029.svg">
+            <img src="images/Group 1171275029.svg">
          </div>
          <!-- Popular cars -->
          <h3>Most Popular cars</h3>
@@ -85,26 +113,26 @@
             <div class="mitsubhi">
                <div class="mit1">
                   <div class="mit11">
-                     <img src="/images/mitsubishi.svg">
+                     <img src="images/mitsubishi.svg">
                   </div>
                   <div class="mit12">
                      <h4>Mitsubhi Eclipse</h4>
                      <p class="mitp">Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV mobility with signature Mitsubishi styling, technology and driving confidence.</p>
                      <div class="mit121">
                         <div class="mit1211">
-                           <img src="/images/people.svg" width="12px"> 
+                           <img src="images/people.svg" width="12px"> 
                            <p>6 people</p>
                         </div>
                         <div class="mit1211">
-                           <img src="/images/auto.svg" width="12px">
+                           <img src="images/auto.svg" width="12px">
                            <p>automatic</p>
                         </div>
                         <div class="mit1211">
-                           <img src="/images/door.svg" width="12px">
+                           <img src="images/door.svg" width="12px">
                            <p>5 Doors</p>
                         </div>
                         <div class="mit1211">
-                           <img src="/images/ac.svg" width="12px">
+                           <img src="images/ac.svg" width="12px">
                            <p>AC</p>
                         </div>
                      </div>
@@ -118,26 +146,26 @@
                </div>
                <div class="mit2">
                   <div class="mit21">
-                     <img src="/images/jac.svg">
+                     <img src="images/jac.svg">
                   </div>
                   <div class="mit22">
                      <h4>Jac j7</h4>
                      <p class="mitp">S3 Plus has been rated Five-Star in C-NCAP including front impact, side impact, frontal side impact & Whipping test.  </p>
                      <div class="mit121">
                         <div class="mit1211">
-                           <img src="/images/people.svg" width="12px"> 
+                           <img src="images/people.svg" width="12px"> 
                            <p>6 people</p>
                         </div>
                         <div class="mit1211">
-                           <img src="/images/auto.svg" width="12px">
+                           <img src="images/auto.svg" width="12px">
                            <p>automatic</p>
                         </div>
                         <div class="mit1211">
-                           <img src="/images/door.svg" width="12px">
+                           <img src="images/door.svg" width="12px">
                            <p>5 Doors</p>
                         </div>
                         <div class="mit1211">
-                           <img src="/images/ac.svg" width="12px">
+                           <img src="images/ac.svg" width="12px">
                            <p>AC</p>
                         </div>
                      </div>
@@ -164,7 +192,7 @@
             </div>
             <div class="sub2">
                <div class="sub21">
-                  <img src="/images/phone.svg" width="231px" height="417px" id="phone">
+                  <img src="images/phone.svg" width="231px" height="417px" id="phone">
                   <div id="numberm"> <input type="text" placeholder="Enter phonenumber" id="number">
                      <button class="bt">Get the link</button>
                   </div>
@@ -177,15 +205,15 @@
                   <div><button class="bt">Get the link</button></div>
                   <P>Get in on</P>
                   <div class="sub221">
-                     <a href=""><img src="/images/app.svg" ></a> 
-                     <a href=""><img src="/images/play.svg"></a>
+                     <a href=""><img src="images/app.svg" ></a> 
+                     <a href=""><img src="images/play.svg"></a>
                   </div>
                </div>
                <div class="sub23">
                   <div class="sub221">
                      <P>Get in on</P>
-                     <a href=""><img src="/images/app.svg" ></a> 
-                     <a href=""><img src="/images/play.svg"></a>
+                     <a href=""><img src="images/app.svg" ></a> 
+                     <a href=""><img src="images/play.svg"></a>
                   </div>
                   <p>Enter your number and receive a direct link to download the app</p>
                </div>
@@ -197,21 +225,21 @@
             <div class="step1">
                <p class="st">01</p>
                <div class="step11">
-                  <img id="s1" src="/images/pin1.svg">
+                  <img id="s1" src="images/pin1.svg">
                   <p>Select the location. Browse through our available options and find the perfect car to suit your needs</p>
                </div>
             </div>
             <div class="step1">
                <p class="st">02</p>
                <div class="step11">
-                  <img id="s1" src="/images/cal1.svg" >
+                  <img id="s1" src="images/cal1.svg" >
                   <p>Choose your desired Pick-Up date and time.</p>
                </div>
             </div>
             <div class="step1">
                <p class="st">03</p>
                <div class="step11" >
-                  <img id="s1" src="/images/car.svg"> 
+                  <img id="s1" src="images/car.svg"> 
                   <p>Make payment and book the car. Select an option to either have the car delivered to your location or pick it up directly from us.</p>
                </div>
             </div>
@@ -224,7 +252,7 @@
                   <div class="loc11">
                      <li>
                         <div class="loc111">
-                           <img src="/images/pin.svg">
+                           <img src="images/pin.svg">
                            <p>Dubai</p>
                         </div>
                      </li>
@@ -232,7 +260,7 @@
                   <div class="loc11">
                      <li>
                         <div class="loc111">
-                           <img src="/images/pin.svg">
+                           <img src="images/pin.svg">
                            <p>Abu Dhabi</p>
                         </div>
                      </li>
@@ -240,7 +268,7 @@
                   <div class="loc11">
                      <li>
                         <div class="loc111">
-                           <img src="/images/pin.svg">
+                           <img src="images/pin.svg">
                            <p>Sharjah</p>
                         </div>
                      </li>
@@ -248,7 +276,7 @@
                   <div class="loc11">
                      <li>
                         <div class="loc111">
-                           <img src="/images/pin.svg">
+                           <img src="images/pin.svg">
                            <p>Fujairah</p>
                         </div>
                      </li>
@@ -256,7 +284,7 @@
                   <div class="loc11">
                      <li>
                         <div class="loc111">
-                           <img src="/images/pin.svg">
+                           <img src="images/pin.svg">
                            <p>Ras Al Khaimah</p>
                         </div>
                      </li>
@@ -299,7 +327,7 @@
       <!-- Footer section -->
       <footer>
          <div class="f">
-            <img id="ft" src="/images/logo.svg" alt="">
+            <img id="ft" src="images/logo.svg" alt="">
             <div class="ft1">
                <div class="ftt">
                   <div class="ft11" >
@@ -363,11 +391,11 @@
             <div class="soc">
                <p>FOLLOW US ON</p>
                <div class="soc1">
-                  <div class="soc11"><a href=""><img src="/images/fb1.svg" alt=""></a></div>
-                  <div class="soc11"><a href=""><img src="/images/x1.svg"></a></div>
-                  <div class="soc11"><a href=""><img src="/images/insta1.png" alt=""></a></div>
-                  <div class="soc11"><a href=""><img src="/images/ln1.svg"></a></div>
-                  <div class="soc11"><a href=""><img src="/images/yt.svg"></a></div>
+                  <div class="soc11"><a href=""><img src="images/fb1.svg" alt=""></a></div>
+                  <div class="soc11"><a href=""><img src="images/x1.svg"></a></div>
+                  <div class="soc11"><a href=""><img src="images/insta1.png" alt=""></a></div>
+                  <div class="soc11"><a href=""><img src="images/ln1.svg"></a></div>
+                  <div class="soc11"><a href=""><img src="images/yt.svg"></a></div>
                </div>
             </div>
          </div>
@@ -433,7 +461,7 @@
          </div>
          <p id="foot">© 2018 Car rental LLC - All Rights Reserved. </p>
       </footer>
-      <script src="script.js"></script>
+      <script src="scripts.js"></script>
    </body>
 </html>
 

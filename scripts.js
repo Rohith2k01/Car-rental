@@ -1,34 +1,47 @@
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+function myFunction() {
+    var book = document.getElementById("book");
+    if (book.style.display === "flex") {
+        book.style.display = "none";
+    } else {
+        book.style.display = "flex";
+    }
+    }
+  
+  
+  function myFunction1() {
+      var book1=document.getElementById("book1");
+      if(book1.style.display==="block"){
+        book1.style.display="none";
+      }
+      else {
+        book1.style.display = "block";
+      }
   }
-
-  // Select all question-item elements
-const questionItems = document.querySelectorAll('.question-item');
-
-// Loop through each question item
-questionItems.forEach(item => {
-    // Select the button inside the current question item
-    const button = item.querySelector('.dropbtn');
+  
+  function myFunction2(){
+  
+    var book2=document.getElementById("book2");
+      if(book2.style.display==="block"){
+        book2.style.display="none";
+      }
+      else {
+        book2.style.display = "block";
+      }
+  
+  }
+  
+  
+  
+  function toggleMenu(){
+    var head=document.getElementById("head1");
+    if(head.style.display==="flex"){
+      head.style.display="none";
+    }
+    else{
+      head.style.display="flex";
+    }
     
-    // Add an event listener to the button
-    button.addEventListener('click', function() {
-        // Toggle the active state of the dropdown-content
-        const dropdownContent = item.querySelector('.dropdown-content');
-        
-        // Toggle the display of the dropdown content
-        if (dropdownContent) {
-            dropdownContent.classList.toggle('show');
-        }
-
-        // Toggle the "+" and "X" on the button
-        if (button.textContent === "+") {
-            button.textContent = "X";
-        } else {
-            button.textContent = "+";
-        }
-    });
-});
+  }
 
 
 
